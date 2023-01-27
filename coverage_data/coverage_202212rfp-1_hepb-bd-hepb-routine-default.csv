@@ -1,0 +1,243 @@
+scenario,set_name,vaccine,gavi_support,activity_type,country_code,country,year,age_first,age_last,age_range_verbatim,target,coverage,gender,proportion_risk
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,1980,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,1981,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,1982,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,1983,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,1984,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,1985,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,1986,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,1987,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,1988,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,1989,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,1990,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,1991,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,1992,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,1993,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,1994,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,1995,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,1996,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,1997,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,1998,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,1999,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2000,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2001,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2002,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2003,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2004,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2005,0,0,default routine age,<NA>,0.1799999999999999933,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2006,0,0,default routine age,<NA>,0.2700000000000000178,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2007,0,0,default routine age,<NA>,0.4199999999999999845,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2008,0,0,default routine age,<NA>,0.4099999999999999756,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2009,0,0,default routine age,<NA>,0.6300000000000000044,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2010,0,0,default routine age,<NA>,0.4899999999999999911,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2011,0,0,default routine age,<NA>,0.46000000000000002,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2012,0,0,default routine age,<NA>,0.4199999999999999845,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2013,0,0,default routine age,<NA>,0.4299999999999999933,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2014,0,0,default routine age,<NA>,0.4299999999999999933,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2015,0,0,default routine age,<NA>,0.4199999999999999845,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2016,0,0,default routine age,<NA>,0.5300000000000000266,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2017,0,0,default routine age,<NA>,0.5500000000000000444,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2018,0,0,default routine age,<NA>,0.5500000000000000444,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2019,0,0,default routine age,<NA>,0.5600000000000000533,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2020,0,0,default routine age,<NA>,0.5600000000000000533,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2021,0,0,default routine age,<NA>,0.5600000000000000533,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2022,0,0,<NA>,<NA>,0.5709787281549063565,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2023,0,0,<NA>,<NA>,0.5816835188736779738,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2024,0,0,<NA>,<NA>,0.592121207348684564,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2025,0,0,<NA>,<NA>,0.6022984582229351513,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2026,0,0,<NA>,<NA>,0.6122217698455658663,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2027,0,0,<NA>,<NA>,0.6218974784211481754,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2028,0,0,<NA>,<NA>,0.6313317620554637077,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2029,0,0,<NA>,<NA>,0.6405306447003306092,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2030,0,0,<NA>,<NA>,0.6494999999999999662,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2031,0,0,<NA>,<NA>,0.6594999999999999751,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2032,0,0,<NA>,<NA>,0.669499999999999984,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2033,0,0,<NA>,<NA>,0.6794999999999999929,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2034,0,0,<NA>,<NA>,0.6895000000000000018,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2035,0,0,<NA>,<NA>,0.6995000000000000107,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2036,0,0,<NA>,<NA>,0.7095000000000000195,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2037,0,0,<NA>,<NA>,0.7195000000000000284,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2038,0,0,<NA>,<NA>,0.7294999999999999263,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2039,0,0,<NA>,<NA>,0.7394999999999999352,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2040,0,0,<NA>,<NA>,0.749499999999999944,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2041,0,0,<NA>,<NA>,0.7594999999999999529,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2042,0,0,<NA>,<NA>,0.7694999999999999618,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2043,0,0,<NA>,<NA>,0.7794999999999999707,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2044,0,0,<NA>,<NA>,0.7894999999999999796,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2045,0,0,<NA>,<NA>,0.7994999999999999885,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2046,0,0,<NA>,<NA>,0.8094999999999999973,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2047,0,0,<NA>,<NA>,0.8195000000000000062,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2048,0,0,<NA>,<NA>,0.8294999999999999041,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2049,0,0,<NA>,<NA>,0.839499999999999913,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2050,0,0,<NA>,<NA>,0.8494999999999999218,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2051,0,0,<NA>,<NA>,0.8594999999999999307,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2052,0,0,<NA>,<NA>,0.8694999999999999396,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2053,0,0,<NA>,<NA>,0.8794999999999999485,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2054,0,0,<NA>,<NA>,0.8894999999999999574,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2055,0,0,<NA>,<NA>,0.8994999999999999662,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2056,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2057,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2058,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2059,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2060,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2061,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2062,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2063,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2064,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2065,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2066,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2067,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2068,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2069,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2070,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2071,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2072,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2073,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2074,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2075,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2076,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2077,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2078,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2079,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2080,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2081,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2082,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2083,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2084,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2085,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2086,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2087,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2088,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2089,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2090,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2091,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2092,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2093,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2094,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2095,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2096,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2097,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2098,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2099,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB, with, routine",HepB,total,routine,RFP,Request for Proposal,2100,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,1980,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,1981,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,1982,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,1983,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,1984,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,1985,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,1986,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,1987,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,1988,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,1989,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,1990,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,1991,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,1992,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,1993,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,1994,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,1995,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,1996,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,1997,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,1998,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,1999,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2000,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2001,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2002,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2003,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2004,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2005,0,0,use default routine age for this projection,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2006,0,0,default routine age,<NA>,0,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2007,0,0,default routine age,<NA>,0.0200000000000000004,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2008,0,0,default routine age,<NA>,0.1100000000000000006,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2009,0,0,default routine age,<NA>,0.2000000000000000111,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2010,0,0,default routine age,<NA>,0.28999999999999998,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2011,0,0,default routine age,<NA>,0.28999999999999998,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2012,0,0,default routine age,<NA>,0.28999999999999998,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2013,0,0,default routine age,<NA>,0.2999999999999999889,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2014,0,0,default routine age,<NA>,0.2999999999999999889,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2015,0,0,default routine age,<NA>,0.2999999999999999889,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2016,0,0,default routine age,<NA>,0.2999999999999999889,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2017,0,0,default routine age,<NA>,0.2999999999999999889,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2018,0,0,default routine age,<NA>,0.4099999999999999756,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2019,0,0,default routine age,<NA>,0.5200000000000000178,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2020,0,0,default routine age,<NA>,0.5200000000000000178,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2021,0,0,default routine age,<NA>,0.5200000000000000178,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2022,0,0,<NA>,<NA>,0.5364798078193779851,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2023,0,0,<NA>,<NA>,0.5523938155017484863,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2024,0,0,<NA>,<NA>,0.5677614486252822168,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2025,0,0,<NA>,<NA>,0.5826014658310774141,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2026,0,0,<NA>,<NA>,0.5969319817210647638,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2027,0,0,<NA>,<NA>,0.6107704889697614936,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2028,0,0,<NA>,<NA>,0.6241338796768631791,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2029,0,0,<NA>,<NA>,0.6370384659867391886,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2030,0,0,<NA>,<NA>,0.6494999999999999662,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2031,0,0,<NA>,<NA>,0.6594999999999999751,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2032,0,0,<NA>,<NA>,0.669499999999999984,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2033,0,0,<NA>,<NA>,0.6794999999999999929,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2034,0,0,<NA>,<NA>,0.6895000000000000018,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2035,0,0,<NA>,<NA>,0.6995000000000000107,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2036,0,0,<NA>,<NA>,0.7095000000000000195,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2037,0,0,<NA>,<NA>,0.7195000000000000284,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2038,0,0,<NA>,<NA>,0.7294999999999999263,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2039,0,0,<NA>,<NA>,0.7394999999999999352,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2040,0,0,<NA>,<NA>,0.749499999999999944,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2041,0,0,<NA>,<NA>,0.7594999999999999529,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2042,0,0,<NA>,<NA>,0.7694999999999999618,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2043,0,0,<NA>,<NA>,0.7794999999999999707,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2044,0,0,<NA>,<NA>,0.7894999999999999796,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2045,0,0,<NA>,<NA>,0.7994999999999999885,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2046,0,0,<NA>,<NA>,0.8094999999999999973,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2047,0,0,<NA>,<NA>,0.8195000000000000062,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2048,0,0,<NA>,<NA>,0.8294999999999999041,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2049,0,0,<NA>,<NA>,0.839499999999999913,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2050,0,0,<NA>,<NA>,0.8494999999999999218,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2051,0,0,<NA>,<NA>,0.8594999999999999307,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2052,0,0,<NA>,<NA>,0.8694999999999999396,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2053,0,0,<NA>,<NA>,0.8794999999999999485,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2054,0,0,<NA>,<NA>,0.8894999999999999574,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2055,0,0,<NA>,<NA>,0.8994999999999999662,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2056,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2057,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2058,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2059,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2060,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2061,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2062,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2063,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2064,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2065,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2066,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2067,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2068,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2069,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2070,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2071,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2072,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2073,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2074,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2075,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2076,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2077,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2078,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2079,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2080,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2081,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2082,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2083,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2084,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2085,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2086,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2087,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2088,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2089,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2090,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2091,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2092,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2093,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2094,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2095,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2096,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2097,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2098,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2099,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
+hepb-bd-hepb-routine-default,"HepB: HepB_BD, with, routine",HepB_BD,total,routine,RFP,Request for Proposal,2100,0,0,<NA>,<NA>,0.9000000000000000222,both,<NA>
