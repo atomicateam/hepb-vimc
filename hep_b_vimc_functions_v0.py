@@ -52,24 +52,33 @@ def input_results(n_samples, fw = 'hbv_v14_gamma_2.xlsx', db = "AFR_db_v1_2_1.xl
     ## Load projects and input parameters
     P, parsets, results = load_sto_project(n_samples, fw= fw, db=db, cl=cl, seed=seed)
 
+    sexes = ['M', 'F']
     ages = ['0-4', '5-14', '15-49', '50-69', '70+']
     nathis = ['ci_p', 'm_acu', 'm_dc', 'm_hcc']
     trtinv = ['te_dc_cc', 'te_icl_ict', 'te_icl_cc', 'te_cc_dc', 'te_cc_hcc', 'te_ie_cc', 'te_m_dc', 'te_m_hcc', 'te_ict_hcc', 'te_ie_hcc', 'te_icl_hcc', 'te_dc_hcc']
     vacinv = ['eag_ve', 'sag_ve', 'hb3_ve', 'mav_ve']
     tot_pars = trtinv + vacinv
 
-    ## Create a dataframe for the input parameters
-    in_df = pd.DataFrame(columns = ['run_id']+nathis+trtinv+vacinv)
+    in_df_pars = []
+    for par in tot_pars:
+        for age in ages:
+            for sex in sexes:
+                in_df_pars.append(f'{par}_{age}{sex}')
 
-    for sim in range(10):
-        in_df.loc[sim,'run_id'] = sim + 1
-        for col in in_df.columns[1:]:
-            in_df.loc[sim,col] = parsets[3].get_par(col).ts[0].assumption #TODO: get different input parameters per population
+    ## Create a dataframe for the input parameters
+    in_df = pd.DataFrame(columns = ['run_id']+in_df_pars)
+
+    for sim in range(1,n_samples+1):
+        in_df.loc[sim,'run_id'] = sim
+        for par in tot_pars:
+            for age in ages:
+                for sex in sexes:
+                    in_df.loc[sim,f'{par}_{age}{sex}'] = parsets[sim].get_par(par).ts[f'{age}{sex}'].assumption #TODO: get different input parameters per population.loc[sim,col] = parsets[sim].get_par(col).ts[0].assumption #TODO: get different input parameters per population
 
     return in_df
 
 def central_results(fw = 'hbv_v14_gamma_2.xlsx', db = "AFR_db_v1_2_1.xlsx", cl = 'AFR_calib_v1_2.xlsx'):
-
+    P, res = load_cen_project(fw= fw, db=db, cl=cl)
     ## Locations for the important dataframes
     loc = 'Data/Templates/' # The location for the output templates may be different
     loc2 = 'Data/Demographics/' # The location for the input data may be different (depending on where you store it)
@@ -238,7 +247,7 @@ def stochastic_results(n_samples, fw = 'hbv_v14_gamma_2.xlsx', db = "AFR_db_v1_2
         print(f'Sim no {sim}')
 
         dfs[sim] = pd.read_csv(loc+'/stochastic-burden-template.202212rfp-1.RFP_standard template_HepB.csv')
-        dfs[sim].run_id = sim+1
+        dfs[sim].run_id = sim
         ## Other outputs
         for opt in output_dict:
             print(opt)
@@ -345,7 +354,7 @@ def stochastic_results(n_samples, fw = 'hbv_v14_gamma_2.xlsx', db = "AFR_db_v1_2
                 dfs[sim].loc[idx, 'deaths'] = ratio * res_val
 
     final_df = dfs[1]
-    for i in range(1,n_samples+1):
+    for i in range(2,n_samples+1):
         final_df = pd.concat([final_df,dfs[i]])
 
     return final_df
