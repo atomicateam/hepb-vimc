@@ -3,8 +3,22 @@ import pandas as pd
 import atomica as at
 
 def load_cen_project(fw = 'hbv_v14_gamma_2.xlsx', db = "AFR_db_v1_2_1.xlsx", cl = 'AFR_calib_v1_2.xlsx'):
+    '''
+    Created by: Phillip Luong (https://github.com/phillipluong)
+    Last Updated: 31/01/23
+    Loads an Atomica Project with the results using the baseline input parameters
+
+    Inputs:
+    - fw:   Excel sheet of the Atomica Framework of the model (str)
+    - db:   Excel sheet of the Atomica Databook of the model (str)
+    - cl:   Excel sheet of the Model Calibration of the model - specific to a region estimate (str)
+
+    Outputs:
+    - P:    Atomica Project attributed to the inputted framework and databook (Project)
+    - res:  Project results from the model (Result)
+    '''
     ## Load projects and input parameters
-    P =at.Project(framework=fw, databook=db, sim_start=1990, sim_end=2101, sim_dt=0.25, do_run=False) #test PSA on some parameters (vax eff, mtct_infx, mortality rates)
+    P =at.Project(framework=fw, databook=db, sim_start=1990, sim_end=2101, sim_dt=0.25, do_run=False)
 
     cal = P.make_parset()
     cal.load_calibration(cl)
@@ -14,8 +28,25 @@ def load_cen_project(fw = 'hbv_v14_gamma_2.xlsx', db = "AFR_db_v1_2_1.xlsx", cl 
     return P, res
 
 def load_sto_project(n_samples, fw = 'hbv_v14_gamma_2.xlsx', db = "AFR_db_v1_2_1.xlsx", cl = 'AFR_calib_v1_2.xlsx', seed = 310123):
+    '''
+    Created by: Phillip Luong (https://github.com/phillipluong)
+    Last Updated: 31/01/23
+    Loads a set of Atomica Projects with the results using the baseline input parameters with variances in select input parameters
+
+    Inputs:
+    - n_samples:    Number of stochastic input samples (int)
+    - fw:           Excel sheet of the Atomica Framework of the model (str)
+    - db:           Excel sheet of the Atomica Databook of the model (str)
+    - cl:           Excel sheet of the Model Calibration of the model - specific to a region estimate (str)
+    - seed:         Random seed (int)
+
+    Outputs:
+    - P:        Atomica Project attributed to the inputted framework and databook (Project)
+    - parsets:  Dictionary of input parameter sets (dict)
+    - results:  Dictionary of project results from the model (dict)
+    '''
     ## Load projects and input parameters
-    P =at.Project(framework=fw, databook=db, sim_start=1990, sim_end=2101, sim_dt=0.25, do_run=False) #test PSA on some parameters (vax eff, mtct_infx, mortality rates)
+    P =at.Project(framework=fw, databook=db, sim_start=1990, sim_end=2101, sim_dt=0.25, do_run=False)
 
     cal = P.make_parset()
     cal.load_calibration(cl)
@@ -32,9 +63,24 @@ def load_sto_project(n_samples, fw = 'hbv_v14_gamma_2.xlsx', db = "AFR_db_v1_2_1
 
     ## Copy the male treatment/vaccine parameters onto the female parameters
     ages = ['0-4', '5-14', '15-49', '50-69', '70+']
+    nathis = ['ci_p', 'm_acu', 'm_dc', 'm_hcc']
+
     trtinv = ['te_dc_cc', 'te_icl_ict', 'te_icl_cc', 'te_cc_dc', 'te_cc_hcc', 'te_ie_cc', 'te_m_dc', 'te_m_hcc', 'te_ict_hcc', 'te_ie_hcc', 'te_icl_hcc', 'te_dc_hcc']
     vacinv = ['eag_ve', 'sag_ve', 'hb3_ve', 'mav_ve']
     tot_pars = trtinv + vacinv
+    tot_pars.remove('te_icl_ict')
+
+    for i in range(1, n_samples+1):
+        for age in P.data.pops:
+            for par in nathis + ['te_icl_ict']:
+                if parsets[i].get_par(par).ts[age].assumption < 0:
+                    parsets[i].get_par(par).ts[age].assumption = 0
+
+            for par in tot_pars:
+                if parsets[i].get_par(par).ts[age].assumption < 0:
+                    parsets[i].get_par(par).ts[age].assumption = 0
+                elif parsets[i].get_par(par).ts[age].assumption > 1:
+                    parsets[i].get_par(par).ts[age].assumption = 1
 
     for i in range(1, n_samples+1):
         for age in ages:
@@ -48,6 +94,21 @@ def load_sto_project(n_samples, fw = 'hbv_v14_gamma_2.xlsx', db = "AFR_db_v1_2_1
     return P, parsets, results
 
 def input_results(n_samples, fw = 'hbv_v14_gamma_2.xlsx', db = "AFR_db_v1_2_1.xlsx", cl = 'AFR_calib_v1_2.xlsx', seed = 310123):
+    '''
+    Created by: Phillip Luong (https://github.com/phillipluong)
+    Last Updated: 31/01/23
+    Generates a DataFrame listing all input results.
+
+    Inputs:
+    - n_samples:    Number of stochastic input samples (int)
+    - fw:           Excel sheet of the Atomica Framework of the model (str)
+    - db:           Excel sheet of the Atomica Databook of the model (str)
+    - cl:           Excel sheet of the Model Calibration of the model - specific to a region estimate (str)
+    - seed:         Random seed (int)
+
+    Outputs:
+    - in_df:        DataFrame listing all stochastic parameter sets (DataFrame)
+    '''
 
     ## Load projects and input parameters
     P, parsets, results = load_sto_project(n_samples, fw= fw, db=db, cl=cl, seed=seed)
@@ -57,10 +118,10 @@ def input_results(n_samples, fw = 'hbv_v14_gamma_2.xlsx', db = "AFR_db_v1_2_1.xl
     nathis = ['ci_p', 'm_acu', 'm_dc', 'm_hcc']
     trtinv = ['te_dc_cc', 'te_icl_ict', 'te_icl_cc', 'te_cc_dc', 'te_cc_hcc', 'te_ie_cc', 'te_m_dc', 'te_m_hcc', 'te_ict_hcc', 'te_ie_hcc', 'te_icl_hcc', 'te_dc_hcc']
     vacinv = ['eag_ve', 'sag_ve', 'hb3_ve', 'mav_ve']
-    tot_pars = trtinv + vacinv
+    all_pars = trtinv + vacinv + nathis
 
     in_df_pars = []
-    for par in tot_pars:
+    for par in all_pars:
         for age in ages:
             for sex in sexes:
                 in_df_pars.append(f'{par}_{age}{sex}')
@@ -70,14 +131,34 @@ def input_results(n_samples, fw = 'hbv_v14_gamma_2.xlsx', db = "AFR_db_v1_2_1.xl
 
     for sim in range(1,n_samples+1):
         in_df.loc[sim,'run_id'] = sim
-        for par in tot_pars:
+        for par in all_pars:
             for age in ages:
                 for sex in sexes:
                     in_df.loc[sim,f'{par}_{age}{sex}'] = parsets[sim].get_par(par).ts[f'{age}{sex}'].assumption #TODO: get different input parameters per population.loc[sim,col] = parsets[sim].get_par(col).ts[0].assumption #TODO: get different input parameters per population
 
+    drop_cols = []
+    for col in in_df.columns:
+        if in_df.loc[:,col].sum() == 0:
+            drop_cols.append(col)
+
+    in_df.drop(columns = drop_cols, inplace = True)
+
     return in_df
 
 def central_results(fw = 'hbv_v14_gamma_2.xlsx', db = "AFR_db_v1_2_1.xlsx", cl = 'AFR_calib_v1_2.xlsx'):
+    '''
+    Created by: Phillip Luong (https://github.com/phillipluong)
+    Last Updated: 31/01/23
+    Generates a DataFrame listing all central output results.
+
+    Inputs:
+    - fw:       Excel sheet of the Atomica Framework of the model (str)
+    - db:       Excel sheet of the Atomica Databook of the model (str)
+    - cl:       Excel sheet of the Model Calibration of the model - specific to a region estimate (str)
+
+    Outputs:
+    - cen_df:   DataFrame listing the central estimates of 1-year age groups between 2000-2100 (DataFrame)
+    '''
     P, res = load_cen_project(fw= fw, db=db, cl=cl)
     ## Locations for the important dataframes
     loc = 'Data/Templates/' # The location for the output templates may be different
@@ -212,10 +293,22 @@ def central_results(fw = 'hbv_v14_gamma_2.xlsx', db = "AFR_db_v1_2_1.xlsx", cl =
     return cen_df
 
 def stochastic_results(n_samples, fw = 'hbv_v14_gamma_2.xlsx', db = "AFR_db_v1_2_1.xlsx", cl = 'AFR_calib_v1_2.xlsx', seed = 310123):
+    '''
+    Created by: Phillip Luong (https://github.com/phillipluong)
+    Last Updated: 31/01/23
+    Generates a DataFrame listing all stochastic output results. Each stochastic output is indexed by a 'run_id' which can also refer to the stochastic input parameter set.
 
+    Inputs:
+    - n_samples:    Number of stochastic input samples (int)
+    - fw:           Excel sheet of the Atomica Framework of the model (str)
+    - db:           Excel sheet of the Atomica Databook of the model (str)
+    - cl:           Excel sheet of the Model Calibration of the model - specific to a region estimate (str)
+    - seed:         Random seed (int)
+
+    Outputs:
+    - final_df:     DataFrame listing all stochastic estimates of 1-year age groups between 2000-2100 (DataFrame)
+    '''
     P, parsets, results = load_sto_project(n_samples, fw= fw, db=db, cl=cl, seed=seed)
-    ## TODO: load project for stochastic results
-
     ## Locations for the important dataframes
     loc = 'Data/Templates/' # The location for the output templates may be different
     loc2 = 'Data/Demographics/' # The location for the input data may be different (depending on where you store it)
@@ -358,3 +451,66 @@ def stochastic_results(n_samples, fw = 'hbv_v14_gamma_2.xlsx', db = "AFR_db_v1_2
         final_df = pd.concat([final_df,dfs[i]])
 
     return final_df
+
+def plot_output(df, age, run_id, output):
+    '''
+    Created by: Phillip Luong (https://github.com/phillipluong)
+    Last Updated: 31/01/23
+    Plots a time series of a specific output within an age group of a specific run_id among the stochastic outputs
+
+    Inputs:
+    - df:       Stochastic Result Dataframe (DataFrame)
+    - age:      Age of result to plot (int)
+    - run_id:   Run_id of result to plot (int)
+    - output:   Output column of result to plot - either 'cohort_size', 'cases', 'dalys', 'deaths' (str)
+    '''
+    plt.plot(np.arange(2000,2101), df[(df.age == age) & (df.run_id == run_id)][output])
+
+def plot_cen_output(df, age, output):
+    '''
+    Created by: Phillip Luong (https://github.com/phillipluong)
+    Last Updated: 31/01/23
+    Plots a time series of a specific output within an age group of among the central outputs
+
+    Inputs:
+    - df:       Central Result Dataframe (DataFrame)
+    - age:      Age of result to plot (int)
+    - output:   Output column of result to plot - either 'cohort_size', 'cases', 'dalys', 'deaths' (str)
+    '''
+    plt.plot(np.arange(2000,2101), df[(df.age == age)][output],color = 'black',linewidth=2)
+
+def plot_all(cen_df, sto_df, age):
+    '''
+    Created by: Phillip Luong (https://github.com/phillipluong)
+    Last Updated: 31/01/23
+    Plots time series of all outputs from the central run and all stochastic runs. The central run is specified by a thicker black line, while all stochastic outputs are characterised by thinner time series. Ideally up to 100 stochastic outputs will generate the best idea of the distribution from the uncertainty analysis.
+
+    Inputs:
+    - cen_df:   Central Result Dataframe (DataFrame)
+    - sto_df:   Stochastic Result Dataframe (DataFrame)
+    - age:      Age of result to plot (int)
+    '''
+    plt.figure()
+    for i in range(1,31):
+        plot_output(sto_df, age, i, 'cohort_size')
+        plot_cen_output(cen_df, age, 'cohort_size')
+        plt.title(f'Cohort Size, age {age}')
+
+    plt.figure()
+    for i in range(1,31):
+        plot_output(sto_df, age, i, 'cases')
+        plot_cen_output(cen_df, age, 'cases')
+        plt.title(f'Cases, age {age}')
+
+    plt.figure()
+    for i in range(1,31):
+        plot_output(sto_df, age, i, 'dalys')
+        plot_cen_output(cen_df, age, 'dalys')
+        plt.title(f'DALYs, age {age}')
+
+
+    plt.figure()
+    for i in range(1,31):
+        plot_output(sto_df, age, i, 'deaths')
+        plot_cen_output(cen_df, age, 'deaths')
+        plt.title(f'Total Deaths, age {age}')
