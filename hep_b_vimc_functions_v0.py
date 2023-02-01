@@ -51,7 +51,7 @@ def load_sto_project(n_samples, fw = 'hbv_v14_gamma_2.xlsx', db = "AFR_db_v1_2_1
     cal = P.make_parset()
     cal.load_calibration(cl)
 
-    np.random.seed(seed)
+    np.random.seed(seed) # Set a random seed for consistent results
     afr_ua=P.parsets[0]
 
     parsets = {}
@@ -62,14 +62,16 @@ def load_sto_project(n_samples, fw = 'hbv_v14_gamma_2.xlsx', db = "AFR_db_v1_2_1
         parsets[i] = afr_ua.sample()
 
     ## Copy the male treatment/vaccine parameters onto the female parameters
-    ages = ['0-4', '5-14', '15-49', '50-69', '70+']
-    nathis = ['ci_p', 'm_acu', 'm_dc', 'm_hcc']
+    ages = ['0-4', '5-14', '15-49', '50-69', '70+'] # Age groups
+    nathis = ['ci_p', 'm_acu', 'm_dc', 'm_hcc']     # Natural History-related paramters
 
-    trtinv = ['te_dc_cc', 'te_icl_ict', 'te_icl_cc', 'te_cc_dc', 'te_cc_hcc', 'te_ie_cc', 'te_m_dc', 'te_m_hcc', 'te_ict_hcc', 'te_ie_hcc', 'te_icl_hcc', 'te_dc_hcc']
-    vacinv = ['eag_ve', 'sag_ve', 'hb3_ve', 'mav_ve']
+    trtinv = ['te_dc_cc', 'te_icl_ict', 'te_icl_cc', 'te_cc_dc', 'te_cc_hcc', 'te_ie_cc', 'te_m_dc', 'te_m_hcc', \
+              'te_ict_hcc', 'te_ie_hcc', 'te_icl_hcc', 'te_dc_hcc'] # Treatment-related efficacy parameters
+    vacinv = ['eag_ve', 'sag_ve', 'hb3_ve', 'mav_ve'] # Vaccination-related efficacy parameters
     tot_pars = trtinv + vacinv
     tot_pars.remove('te_icl_ict')
 
+    # Ensure that the randomly sampled input parameters are reasonable (nathis vals >=0, others between 0 and 1)
     for i in range(1, n_samples+1):
         for age in P.data.pops:
             for par in nathis + ['te_icl_ict']:
@@ -82,6 +84,7 @@ def load_sto_project(n_samples, fw = 'hbv_v14_gamma_2.xlsx', db = "AFR_db_v1_2_1
                 elif parsets[i].get_par(par).ts[age].assumption > 1:
                     parsets[i].get_par(par).ts[age].assumption = 1
 
+    # Duplicate treatment and vaccine efficacy parameters for male onto females
     for i in range(1, n_samples+1):
         for age in ages:
             for par in tot_pars:
@@ -120,6 +123,7 @@ def input_results(n_samples, fw = 'hbv_v14_gamma_2.xlsx', db = "AFR_db_v1_2_1.xl
     vacinv = ['eag_ve', 'sag_ve', 'hb3_ve', 'mav_ve']
     all_pars = trtinv + vacinv + nathis
 
+    # Create a list of input parameters (which vary my age and sex)
     in_df_pars = []
     for par in all_pars:
         for age in ages:
@@ -129,6 +133,7 @@ def input_results(n_samples, fw = 'hbv_v14_gamma_2.xlsx', db = "AFR_db_v1_2_1.xl
     ## Create a dataframe for the input parameters
     in_df = pd.DataFrame(columns = ['run_id']+in_df_pars)
 
+    # Input all parameters
     for sim in range(1,n_samples+1):
         in_df.loc[sim,'run_id'] = sim
         for par in all_pars:
@@ -136,6 +141,7 @@ def input_results(n_samples, fw = 'hbv_v14_gamma_2.xlsx', db = "AFR_db_v1_2_1.xl
                 for sex in sexes:
                     in_df.loc[sim,f'{par}_{age}{sex}'] = parsets[sim].get_par(par).ts[f'{age}{sex}'].assumption #TODO: get different input parameters per population.loc[sim,col] = parsets[sim].get_par(col).ts[0].assumption #TODO: get different input parameters per population
 
+    # Drop 0-value columns
     drop_cols = []
     for col in in_df.columns:
         if in_df.loc[:,col].sum() == 0:
@@ -170,6 +176,7 @@ def central_results(fw = 'hbv_v14_gamma_2.xlsx', db = "AFR_db_v1_2_1.xlsx", cl =
     df1 = df1[(df1.year >= 1990) & (df1.year <=2100)]
     age_groups = ['0-4', '5-14', '15-49', '50-69', '70+']
 
+    ## Assort data by age group
     for idx,row in df1.iterrows():
         if row.age_from < 5:
             df1.loc[idx,'age_group'] = '0-4'
@@ -191,10 +198,10 @@ def central_results(fw = 'hbv_v14_gamma_2.xlsx', db = "AFR_db_v1_2_1.xlsx", cl =
         tot_val = res.get_variable(output_dict[opt])[0].vals + res.get_variable(output_dict[opt])[1].vals
         for age in range(0,5):
             for year in range(2000,2101):
-                ratio = float(df1[(df1.age_to == age) & (df1.year == year)].value)/df1.groupby(by=['age_group','year']).sum().loc[('0-4',year),'value']
-                res_val = tot_val[(year-1990)*4]
+                ratio = float(df1[(df1.age_to == age) & (df1.year == year)].value)/df1.groupby(by=['age_group','year']).sum().loc[('0-4',year),'value'] # Ratio of age relative to age group
+                res_val = tot_val[(year-1990)*4] # The '4' should be timestep (if future runs are different)
 
-                idx = cen_df[(cen_df.year == year) & (cen_df.age == age)].index[0]
+                idx = cen_df[(cen_df.year == year) & (cen_df.age == age)].index[0] #Index of age group year sim entry
                 cen_df.loc[idx, opt] = ratio * res_val
 
         tot_val = res.get_variable(output_dict[opt])[2].vals + res.get_variable(output_dict[opt])[3].vals
@@ -236,7 +243,7 @@ def central_results(fw = 'hbv_v14_gamma_2.xlsx', db = "AFR_db_v1_2_1.xlsx", cl =
     ## Deaths are calculated separately
     tot_val = 0
     for var in ['cl_acu', 'cl_cir', 'cl_hcc']:
-        tot_val += res.get_variable(var)[0].vals + res.get_variable(var)[1].vals
+        tot_val += res.get_variable(var)[0].vals + res.get_variable(var)[1].vals # Total deaths in age group
 
     for age in range(0,5):
         for year in range(2000,2101):
@@ -347,8 +354,8 @@ def stochastic_results(n_samples, fw = 'hbv_v14_gamma_2.xlsx', db = "AFR_db_v1_2
             tot_val = stores.get_variable(output_dict[opt])[0].vals + stores.get_variable(output_dict[opt])[1].vals
             for age in range(0,5):
                 for year in range(2000,2101):
-                    ratio = float(df1[(df1.age_to == age) & (df1.year == year)].value)/df1.groupby(by=['age_group','year']).sum().loc[('0-4',year),'value']
-                    res_val = tot_val[(year-1990)*4]
+                    ratio = float(df1[(df1.age_to == age) & (df1.year == year)].value)/df1.groupby(by=['age_group','year']).sum().loc[('0-4',year),'value'] # Ratio of age relative to age group
+                    res_val = tot_val[(year-1990)*4] # '4' refers to the timestep, 1990 refers to the beginning of the simulation
 
                     idx = df[(dfs[sim].year == year) & (dfs[sim].age == age)].index[0]
                     dfs[sim].loc[idx, opt] = ratio * res_val
